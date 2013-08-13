@@ -14,17 +14,17 @@ Requires jQuery 1.2.x or higher (for cross-domain GAscript $.getScript)
 `$.gaTrack('UA-XXXXX-XX');`
 
 ####Advance use:
-`$.gaTrack(
+	$.gaTrack(
 		'UA-XXXXX-XX',
 		{
 			download:	'/downloads/',
 			extensions:	[
-				'pdf','doc','xls','csv','jpg','gif', 'mp3', 'swf','txt','ppt','zip','gz','dmg','xml'		
+				'pdf','doc','xls','csv','jpg','gif', 'mp3', 'swf','txt','ppt','zip','gz','dmg','xml'
 			],
 			cd_active: false,
 			cd_domainname: "none"
 		}
-);`
+	);
 
 ####Getting tracker instance:
 `$.gaTrackers['UA-XXXXX-XX']._trackPageview();`
